@@ -25,6 +25,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "../ToggleMode.tsx", "../ThemeProvider.tsx"],
+  "include": ["src", "src/components/ToggleMode.tsx", "src/components/ThemeProvider.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
