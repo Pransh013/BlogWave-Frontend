@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import path from "path/posix";
+import SigninForm from "./components/SigninForm";
 
 const App = () => {
   return (
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/signin",
-        element: <SignupForm />,
+        element: <SigninForm />,
       },
     ],
   },

@@ -1,4 +1,3 @@
-import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import {
@@ -27,7 +26,7 @@ const SignupForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof signupSchema>) {
+  function onSubmit(values: SignupBody) {
     setLoading(true);
     console.log(values);
     setLoading(false);
@@ -89,7 +88,7 @@ const SignupForm = () => {
               <Loader />
             </div>
           ) : (
-            <span>Send Message &rarr;</span>
+            <span>Sign up</span>
           )}
           <BottomGradient />
         </button>
